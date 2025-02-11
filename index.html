@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Layout</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background-color: black;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 100vh;
+            width: 100vw;
+            overflow: hidden;
+            position: relative;
+        }
+        .top-image {
+            max-width: 90%;
+            height: auto;
+            object-fit: contain;
+            border-radius: 20px;
+        }
+        .circle-container {
+            position: relative;
+            margin-top: -150px; /* Moves half over top image */
+        }
+        .circle-image {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            display: block;
+        }
+        .text {
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+            font-family: 'arial', sans-serif;
+            text-transform: ;
+            letter-spacing: 0.5px;
+            margin-top: 10px; /* Space below circular image */
+            text-align: center;
+        }
+        .email {
+            color: grey;
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+            text-decoration: none;
+            margin-top: 5px;
+            text-align: center;
+        }
+        .email:hover {
+            text-decoration: underline;
+            color: white;
+        }
+        .box {
+            width: 90%;
+            background-color: #4a4a4a;
+            padding: 15px;
+            margin-top: 40px;
+            border-radius: 10px;
+            display: flex;
+            justify-content: space-between;
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        .box:hover {
+            background-color: #333;
+        }
+    </style>
+</head>
+
+
+
+    
+<body>
+    <img src="IMG_3766.jpeg" alt="Top Image" class="top-image">
+    <div class="circle-container">
+        <img src="circular-image.jpeg" alt="Circular Image" class="circle-image">
+    </div>
+    <div class="text">Harshdeep Singh</div>
+    <a href="mailto:harshdeephere@icloud.com" class="email">harshdeephere@icloud.com</a>
+    <img src="picture-a.png" alt="Top Image" style="max-width: 90%;
+        margin-top: 50px;
+        height: auto;
+        object-fit: contain;
+        border-radius: 20px;">
+</body>
+</html>
